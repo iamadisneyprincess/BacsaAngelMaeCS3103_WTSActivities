@@ -1,0 +1,135 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-image: url('blurry.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #685039;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #d67a3b;
+}
+
+/* Layout for the main sections */
+main {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Left column for Goals and Quotes */
+.left-column {
+    width: 60%;
+}
+
+/* Goals and Quotes Sections */
+section {
+    background: rgba(255, 230, 204, 0.9);
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+    text-align: center;
+    /* Center the text inside the section */
+}
+
+section:hover {
+    transform: scale(1.02);
+}
+
+h2 {
+    color: #d67a3b;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Space above each list item */
+ul li {
+    margin-top: 15px;
+    /* Adjust this value for desired spacing */
+}
+
+/* Daily Reminder Section */
+.daily-reminder {
+    width: 30%;
+    /* Set width of daily reminder section */
+    background: rgba(255, 230, 204, 0.9);
+    padding: 20px;
+    margin: 20px 0;
+    /* Space above and below the daily reminder */
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    /* Change to left align text for bullets */
+    /* Center the text inside the daily reminder section */
+}
+
+/* Daily Reminder List Styling */
+.daily-reminder ul {
+    list-style-type: disc;
+    /* Use bullets */
+    padding-left: 20px;
+    /* Add padding for the bullets */
+    margin: 0;
+    /* Reset margin */
+}
+
+/* Space above each list item in the daily reminder */
+.daily-reminder ul li {
+    margin-top: 15px;
+    /* Adjust this value for desired spacing */
+}
+
+/* Quotes Blockquote */
+blockquote {
+    font-style: italic;
+    margin: 20px 0;
+    /* Space above and below each quote */
+    padding: 15px;
+    border-left: 4px solid #d67a3b;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+/* Visual Inspiration Section */
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    /* Ensuring consistent space between images */
+    width: 100%;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.image-container img {
+    width: calc(20% - 16px);
+    /* Adjusted width to ensure 5 images fit perfectly with the gap */
+    height: auto;
+    border-radius: 12px;
+    transition: transform 0.3s;
+}
+
+.image-container img:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+    color: #ce7a25;
+}
