@@ -1,135 +1,75 @@
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 20px;
-    background-image: url('blurry.jpg');
-    background-size: cover;
-    background-position: center;
-    color: #685039;
-}
+<!DOCTYPE html>
+<html lang="en">
 
-/* Header */
-header {
-    text-align: center;
-    margin-bottom: 20px;
-}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title> Vision Board </title>
+</head>
 
-h1 {
-    color: #d67a3b;
-}
+<body>
+    <header>
+        <h1> Angel's Vision Board </h1>
+    </header>
+    <main>
+        <div class="left-column">
+            <section class="goals">
+                <h2>Goals</h2>
+                <ul>
+                    <li><i class="fas fa-money-bill-wave"></i> Achieve financial independence</li>
+                    <li><i class="fas fa-plane"></i> Travel a lot when I can</li>
+                    <li><i class="fas fa-smile"></i> Do what makes me happy</li>
+                    <li><i class="fas fa-heartbeat"></i> Maintain a healthy lifestyle</li>
+                    <li><i class="fas fa-users"></i> Spend quality time with loved ones</li>
+                </ul>
+            </section>
 
-/* Layout for the main sections */
-main {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
+            <section class="quotes">
+                <h2>Inspirational Quotes</h2>
+                <blockquote>"Dreaming permits each and every one of us to be quietly and safely insane every night of
+                    our lives." - William Dement
+                </blockquote>
+                <blockquote>“It is your life and it is worth risking everything to make it yours.” – Oprah
+                </blockquote>
+                <blockquote>"Love must be as much a light as it is a flame.” - Henry David Thoreau</blockquote>
+            </section>
+        </div>
 
-/* Left column for Goals and Quotes */
-.left-column {
-    width: 60%;
-}
+        <!-- Daily Reminder placed to the right of Goals and Quotes -->
+        <section class="daily-reminder">
+            <h2>Daily Reminder</h2>
+            <ul>
+                <li>Stay focused and positive</li>
+                <li>Take small steps toward your goals</li>
+                <li>Embrace challenges and learn from them</li>
+                <li>Practice gratitude every day</li>
+                <li>Keep your vision in mind at all times</li>
+                <li>Set aside time for coding practice every day.</li>
+                <li>Review your class notes regularly to reinforce learning.</li>
+                <li>Stay updated with the latest trends and technologies in the field.</li>
+                <li>Participate in coding challenges or hackathons to enhance your skills.</li>
+            </ul>
+        </section>
 
-/* Goals and Quotes Sections */
-section {
-    background: rgba(255, 230, 204, 0.9);
-    padding: 20px;
-    margin: 10px 0;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    transition: transform 0.2s;
-    text-align: center;
-    /* Center the text inside the section */
-}
 
-section:hover {
-    transform: scale(1.02);
-}
+        <!-- Visual Inspiration Section horizontally at the bottom -->
+        <section class="images">
+            <h2>Visual Inspiration</h2>
+            <div class="image-container">
+                <img src="graduate.jpg" alt="Image 1">
+                <img src="health.jpg" alt="Image 2">
+                <img src="paris date.jpg" alt="Image 3">
+                <img src="work.jpg" alt="Image 4">
+                <img src="switzerland.jpg" alt="Image 5">
+            </div>
+        </section>
+    </main>
 
-h2 {
-    color: #d67a3b;
-}
+    <footer>
+        <p>Dream Big, Enjoy Life!</p>
+    </footer>
+</body>
 
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-/* Space above each list item */
-ul li {
-    margin-top: 15px;
-    /* Adjust this value for desired spacing */
-}
-
-/* Daily Reminder Section */
-.daily-reminder {
-    width: 30%;
-    /* Set width of daily reminder section */
-    background: rgba(255, 230, 204, 0.9);
-    padding: 20px;
-    margin: 20px 0;
-    /* Space above and below the daily reminder */
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    text-align: left;
-    /* Change to left align text for bullets */
-    /* Center the text inside the daily reminder section */
-}
-
-/* Daily Reminder List Styling */
-.daily-reminder ul {
-    list-style-type: disc;
-    /* Use bullets */
-    padding-left: 20px;
-    /* Add padding for the bullets */
-    margin: 0;
-    /* Reset margin */
-}
-
-/* Space above each list item in the daily reminder */
-.daily-reminder ul li {
-    margin-top: 15px;
-    /* Adjust this value for desired spacing */
-}
-
-/* Quotes Blockquote */
-blockquote {
-    font-style: italic;
-    margin: 20px 0;
-    /* Space above and below each quote */
-    padding: 15px;
-    border-left: 4px solid #d67a3b;
-    background-color: #fff;
-    border-radius: 8px;
-}
-
-/* Visual Inspiration Section */
-.image-container {
-    display: flex;
-    justify-content: space-between;
-    gap: 16px;
-    /* Ensuring consistent space between images */
-    width: 100%;
-    padding: 0;
-    margin-top: 20px;
-}
-
-.image-container img {
-    width: calc(20% - 16px);
-    /* Adjusted width to ensure 5 images fit perfectly with the gap */
-    height: auto;
-    border-radius: 12px;
-    transition: transform 0.3s;
-}
-
-.image-container img:hover {
-    transform: scale(1.05);
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    margin-top: 20px;
-    font-weight: bold;
-    color: #ce7a25;
-}
+</html>
