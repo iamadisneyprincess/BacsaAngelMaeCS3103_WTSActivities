@@ -2,7 +2,7 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 20px;
-    background-image: url('blurry.jpg');
+    background-image: url('assets/blurry.jpg');
     background-size: cover;
     background-position: center;
     color: #685039;
