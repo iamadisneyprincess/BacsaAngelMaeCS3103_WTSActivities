@@ -2,65 +2,84 @@ body {
   font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #fef1f6; /* Light pink background */
+  background: #fbe0ec; /* Light soft pink background */
 }
 
 .container {
   max-width: 600px;
   margin: 50px auto;
   background: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  border: 1px solid #f1d0d6; /* Soft pink border */
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  border: 1px solid #f3c7d6; /* Soft pink border */
+  position: relative;
+  overflow: hidden;
+  animation: fadeIn 1s ease-in-out;
 }
 
 h2 {
   text-align: center;
-  color: #d51a62; /* Bold pink color for heading */
-  font-size: 28px;
+  color: #e1005d; /* Soft, but bold pink color for heading */
+  font-size: 32px;
+  font-weight: 600;
   margin-bottom: 20px;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 textarea {
   width: 100%;
-  height: 200px;
-  border: 2px solid #f1d0d6;
-  border-radius: 8px;
-  padding: 12px;
+  height: 220px;
+  border: 2px solid #f3c7d6;
+  border-radius: 10px;
+  padding: 15px;
   font-size: 16px;
   color: #333;
-  background-color: #fff0f5; /* Very light pink background for textarea */
+  background-color: #fff9fb; /* Very light pink background */
   resize: none;
   outline: none;
   box-sizing: border-box;
+  transition: all 0.3s ease;
 }
 
 textarea:focus {
-  border-color: #d51a62; /* Bold pink focus border */
-  background-color: #fce4ec; /* Slightly darker pink background on focus */
-  box-shadow: 0 0 8px rgba(213, 26, 98, 0.2);
+  border-color: #e1005d; /* Bold pink focus border */
+  background-color: #fce4f1; /* Slightly darker pink on focus */
+  box-shadow: 0 0 10px rgba(225, 0, 93, 0.2);
 }
 
 div#wordcount, div#sentenceCount {
-  margin-top: 15px;
+  margin-top: 20px;
   font-size: 18px;
-  font-weight: bold;
-  color: #555;
-  background-color: #f8bbd0; /* Light pink background */
-  border: 1px solid #f1c4d3; /* Light pink border */
-  padding: 10px;
-  border-radius: 6px;
+  font-weight: 500;
+  color: #333; /* Darker text for better contrast */
+  background: #f8bbd0; /* Soft pink background */
+  border-radius: 10px;
+  padding: 15px;
+  border: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   display: flex;
   justify-content: space-between;
 }
 
 div#wordcount {
-  background-color: #f3e5f5; /* Light purple-pink for word count */
+  background: #f7b2d4; /* Light, soft pink for word count */
 }
 
 div#sentenceCount {
-  background-color: #fce4ec; /* Slightly warmer pink for sentence count */
+  background: #f9c1d7; /* Light, soft pink for sentence count */
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @media (max-width: 768px) {
@@ -70,10 +89,15 @@ div#sentenceCount {
   }
 
   h2 {
-    font-size: 22px;
+    font-size: 24px;
   }
 
   textarea {
-    height: 150px;
+    height: 180px;
+  }
+
+  div#wordcount, div#sentenceCount {
+    font-size: 16px;
+    padding: 10px;
   }
 }
