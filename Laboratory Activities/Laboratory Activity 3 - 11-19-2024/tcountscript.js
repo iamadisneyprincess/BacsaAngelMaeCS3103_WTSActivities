@@ -6,11 +6,11 @@ document.addEventListener('DOMContentLoaded', () => {
     textInput.addEventListener('input', () => {
       const text = textInput.value.trim();
   
-      // Calculate word count
+      // Calculating word count
       const words = text.split(/\s+/).filter(word => word.length > 0);
       wordCount.textContent = `Words: ${words.length}`;
   
-      // Calculate sentence count
+      // Calculating sentence count
       const sentences = text.split(/[.!?]\s*/).filter(sentence => sentence.length > 0);
       sentenceCount.textContent = `Sentences: ${sentences.length}`;
     });
